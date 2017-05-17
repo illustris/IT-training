@@ -40,7 +40,9 @@ Conditions for a collection of connected nodes to be a tree:
 2. Each node has 0, 1 or 2 children
 
 ### Searching and traversing graphs
-*[DFS]: Depth First Search and *[BFS]: Breadth First Search are O(Edges+Vertices)
+DFS and BFS are O(Edges+Vertices)
+*[DFS]: Depth First Search
+*[BFS]: Breadth First Search
 #### DFS ####
 Keep traversing a branch till the destination is reached, there is nowhere further to go or a previously traversed node is reached again. On reaching the end, go up one level and try another branch
 ```
