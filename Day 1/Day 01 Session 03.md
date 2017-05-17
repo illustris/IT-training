@@ -63,18 +63,26 @@ while(!s.empty())
 ```
 
 ## Queue
-`queue<int> q;`
 Works like a FIFO
 
 ```c++
-for(int i=1;i<=10;i++)
-	q.push(i);
-cout<<q.size()<<endl;
-cout<<q.back()<<endl;
-while(!q.empty())
+#include <iostream>
+#include <queue>
+
+using namespace std;
+
+int main()
 {
-	cout<<q.top()<<endl;
-	q.pop();
+	queue<int> q;
+	for(int i=1;i<=10;i++)
+		q.push(i);
+	cout<<q.size()<<endl;
+	cout<<q.back()<<endl;
+	while(!q.empty())
+	{
+		cout<<q.front()<<endl;
+		q.pop();
+	}
 }
 ```
 
@@ -82,6 +90,57 @@ while(!q.empty())
 `pair<int,int> p;`
 Singular entity with two elements
 ```c++
-p.make_pair(10,20);
-cout<<p.first<<" "<<p.second<<endl;
+#include <iostream>
+#include <utility>
+
+using namespace std;
+
+int main()
+{
+	pair<int,int> p;
+	p=make_pair(10,20);
+	cout<<p.first<<" "<<p.second<<endl;
+}
+```
+
+## Maps
+Associative containers that store elements formed by a key and mapped value
+
+```c++
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main()
+{
+	map<char,int> m;
+	m.insert(pair<char,int>('a',100));
+	m.insert(pair<char,int>('z',100));
+	m['d']=120;
+	cout<<m['a']<<" "<<m.at('d')<<endl;
+}
+```
+
+## Set
+Containers that sort and store unique elements.
+```c++
+	#include <iostream>
+#include <set>
+
+using namespace std;
+
+int main()
+{
+	set<int> s;
+	s.clear();
+	s.insert(10);
+	s.insert(20);
+	s.insert(30);
+	cout<<s.size()<<endl;
+	s.insert(20);
+	cout<<s.size()<<endl;
+	s.erase(20);
+	cout<<s.size()<<endl;
+}
 ```
