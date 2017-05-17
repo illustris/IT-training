@@ -11,9 +11,14 @@ using namespace std;
 
 int main()
 {
-	int N=6;
-	bool flag;
-	int arr[N]={1,2,3,4,5,7};
+	int N;
+	cin>>N
+	int arr[N];
+	bool flag=0;
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
 	for(int i=0;i<N && !flag;i++)
 	{
 		for(int j=i+1;j<N;j++)
