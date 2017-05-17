@@ -82,7 +82,7 @@ cout<<xor<<endl;
 ## Problem 3
 1. In an array of numbers containing , one number occurs an odd number of times. Every other number occurs an even number of times. If the array has every number from 1 to N, find the odd and even numbers
 
-### O(N) solution
+### O(N) solution:
 ```c++
 int xor=0;
 for(int i=0;i<N-1;i++)
@@ -92,6 +92,7 @@ for(int i=0;i<N-1;i++)
 cout<<"odd number: "<<xor<<"\n";
 ```
 2. In an array of numbers containing , one number occurs an even number of times. Every other number occurs an odd number of times. If the array has every number from 1 to N, find the even number
+### O(N) solution:
 ```c++
 int xor=0;
 for(int i=0;i<N-1;i++)
