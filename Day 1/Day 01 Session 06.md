@@ -63,3 +63,5 @@ R==S if
 # Passi's Practice Problems
 1. The diameter of a tree is the largest distance in the tree. Write code to find the diameter of a tree in O(N)
 2. In a rooted tree, find the Lowest Common Ancestor of two nodes
+3. Find the centroid of a tree (if the tree is broken off at the centroid, subtrees won't have more than n/2 nodes)
+4. Mass of a tree = sum of (weight of node * distance of node). Find an edge to split an unrooted tree into two rooted trees at, such that they have equal masses
