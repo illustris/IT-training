@@ -49,8 +49,13 @@ V     V                V     V
 W     X                Y     Z
 ```
 
+```
 R==S if
-* T==V and U==W
-
-or
-* T==W and U==V
+	T==V and U==W
+	or
+	T==W and U==V
+	T!=V, so considering case 2
+		U==V
+		T==W if
+			W==Y and X==Z (- isn't commutative)
+```
