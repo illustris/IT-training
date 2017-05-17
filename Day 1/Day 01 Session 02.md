@@ -105,3 +105,22 @@ for(int i=0;i<sizeof(arr))
 }
 cout<<"odd number: "<<xor<<"\neven numbers:\n";
 ```
+## Problem 4
+Given an array of size n, find teo elements such that their sum equals a given number k. Assume array is sorted
+### O(N) solution:
+```c++
+int i=0, j=N-1;
+while(i!=j)
+{
+	if(arr[i]+arr[j]>k)
+		j--;
+	else if(arr[i]+arr[j]<k)
+		i++;
+	else
+		cout<<arr[i]<<"+"<<arr[j]<<endl;
+}
+if(i==j)
+	cout<<"no\n";
+```
+### Other solutions:
+Brute forcing, or taking each element and binary-searching its complement are less efficient approaches
