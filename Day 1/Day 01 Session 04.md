@@ -130,3 +130,64 @@ Followed path:
 |  -->5
 -->4
 ```
+
+#### Example problem ####
+Consider
+```
+R--R--B  R
+|  |     |
+R  B--R  B--R
+      |  |
+      B--R
+```
+Find number of pairs of red nodes with ar least one blue node in the path between them
+
+Solution 1:
+1. Start at a red node
+2. DFS till a blue node is reached. Mark all red nodes till then as done
+3. Find number of red nodes beyond that red node
+4. total += red bunch size * number of red beyond the blue node
+5. Repeat for other red nodes not belonging to the bunch
+
+##### Example problem #####
+Solution 2: connected component approach
+```c++
+int dfs(int current)
+{
+	if(visited[current] || color[current]=='B')
+		return 0;
+	visited[current]=1;
+	int ret = 1
+	for(auto x: graph[current]) //iterate over all elements of vector "graph[current]"
+	{							//not over elements of array "graph"
+		ret+=dfs(x);
+	}
+	return ret
+}
+
+int main()
+{
+	int N, E;
+	cin>>N>>E;
+	for(int i=1;i<=N;i++)
+	{
+		graph[i].clear();
+		visited[i]=0;
+		con>>color[i];
+	}
+	for(int i=1;i<=E;i++)
+	{
+		int u,v;
+		cin>>u>>v
+		graph[u].push_back(u);
+		graph[u].push_back(v);
+	}
+	for(i<=1-N)
+	{
+		if(color[i]=='R' || )
+		{
+			
+		}
+	}
+}
+```
