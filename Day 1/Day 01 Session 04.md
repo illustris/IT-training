@@ -182,12 +182,23 @@ int main()
 		graph[u].push_back(u);
 		graph[u].push_back(v);
 	}
-	for(i<=1-N)
+	for(i=1;i<=Ni++)
 	{
-		if(color[i]=='R' || )
+		if(color[i]=='R' && !visited[i] )
 		{
-			
+			comps.push_back(dfs(i));
 		}
 	}
+	int total=0;
+	for(i=0;i<comps.size())
+	{
+		total+=comps[i];
+	}
+	for(i=0;i<comps.size();i++)
+	{
+		ans=comps[i]*(total-comps[i]);
+	}
+	cout<<ans/2<<endl;
+
 }
 ```
