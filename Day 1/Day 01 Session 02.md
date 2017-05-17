@@ -61,7 +61,7 @@ Iterate through the array and look for missing integer
 
 ### O(N) solution:
 ```c++
-int sum=N*(N+1)/2;
+long long int sum=N*(N+1)/2;
 for(int i=0;i<N;i++)
 	sum-=arr[i];
 cout<<sum<<endl;
