@@ -47,47 +47,52 @@ returns true if vector is empty
 resize vector
 
 ## Stacks
-`stack<int> s;`
-
 ```c++
-for(int i=1;i<=10;i++)
-	s.push(i);
-cout<<s.size()<<endl;
-
-int sum=0
-while(!s.empty())
+#include <iostream>
+#include <stack>
+using namespace std;
+int main()
 {
-	sum+=s.top();
-	s.pop();
+	stack<int> s;
+	for(int i=1;i<=10;i++)
+		s.push(i);
+	cout<<"size: "<<s.size()<<endl;
+	int sum=0;
+	while(!s.empty())
+	{
+		sum+=s.top();
+		cout<<s.top()<<" ";
+		s.pop();
+	}
+	cout<<"\nsum: "<<sum<<endl;
 }
 ```
 
 ## Queue
 Works like a FIFO
-
 ```c++
 #include <iostream>
 #include <queue>
-
 using namespace std;
-
 int main()
 {
 	queue<int> q;
 	for(int i=1;i<=10;i++)
+	{
+		cout<<"Pushing "<<i<<" into queue\n";
 		q.push(i);
-	cout<<q.size()<<endl;
-	cout<<q.back()<<endl;
+	}
+	cout<<"Size: "<<q.size()<<endl;
+	cout<<"Back of queue: "<<q.back()<<endl;
 	while(!q.empty())
 	{
-		cout<<q.front()<<endl;
+		cout<<"Front: "<<q.front()<<endl;
 		q.pop();
 	}
 }
 ```
 
 ## Pairs
-`pair<int,int> p;`
 Singular entity with two elements
 ```c++
 #include <iostream>
@@ -125,7 +130,7 @@ int main()
 ## Set
 Containers that sort and store unique elements.
 ```c++
-	#include <iostream>
+#include <iostream>
 #include <set>
 
 using namespace std;
