@@ -179,8 +179,8 @@ int main()
 	{
 		int u,v;
 		cin>>u>>v
-		graph[u].push_back(u);
 		graph[u].push_back(v);
+		graph[v].push_back(u);
 	}
 	for(i=1;i<=Ni++)
 	{
