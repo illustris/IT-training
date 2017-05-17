@@ -1,8 +1,8 @@
-Complexity:
+#Complexity:
 
 Big O notation: Relation between N and time taken
 
-examples:
+##examples:
 
 ```c++
 for(i=0;i<N;i++)
@@ -32,9 +32,9 @@ while(i>0)
 Complexity: O(log(N)), as number of iterations is proportional to log(N)
 
 
-Sorting Algorithms
+#Sorting Algorithms
 
-Insertion sort
+##Insertion sort
 
 ```c++
 for(int j=1;j<n;j++)
@@ -50,4 +50,5 @@ for(int j=1;j<n;j++)
 }
 ```
 
-Merge sort:
+##Merge sort:
+Divide, conquer, combine
