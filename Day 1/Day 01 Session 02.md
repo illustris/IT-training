@@ -132,7 +132,6 @@ Let A be an n integer array ascenging till index k and descending after k. Find 
 Loop through array and find k such that k[i+1]<k[i]
 
 ### O(log(N)) solution:
-findpeak(int arr[],int n)
 ```c++
 #include <stdio.h>
  
