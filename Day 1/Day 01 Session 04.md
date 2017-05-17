@@ -2,7 +2,11 @@
 Representing a collection of interconnected nodes:
 Consider
 ```
-
+A----->B------C
+      / \
+     /   \
+    /     \
+   D-------E
 ```
 ## Adjacency list
 ```
