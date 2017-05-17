@@ -23,3 +23,17 @@ xE->7 : rejected because a shorter path exists
 Explore from E
 B->8
 
+# Evaluating trees
+Consider these binary trees:
+```
+      +                +
+     / \              / \
+    /   \            /   \
+   V     V          V     V
+   -     C          C     -
+  / \                    / \
+ /   \                  /   \
+V     V                V     V
+A     B                A     B
+```
+
