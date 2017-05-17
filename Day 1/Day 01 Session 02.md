@@ -55,14 +55,26 @@ void printRepeating(int arr[], int size)
 ### Brute force solution:
 
 ## Problem 2
-Given a list of n-1 numbers in the range 1-n with no duplicates, find the one missing number
+Given a list of n-1 numbers in the range 1 to 1-n with no duplicates, find the one missing number
 ### Brute force approach:
 Iterate through the array and look for missing integer
 
 ### O(N) solution:
 ```c++
 long long int sum=N*(N+1)/2;
-for(int i=0;i<N;i++)
+for(int i=0;i<N-1;i++)
 	sum-=arr[i];
 cout<<sum<<endl;
+```
+### Alternative O(N) solution:
+To avoid sum from overflowing,
+```c++
+int xor=0;
+for(int i=0;i<N-1;i++)
+{
+	xor^=i+1;
+	xor^=arr[i];
+}
+xor^=N
+cout<<xor<<endl;
 ```
