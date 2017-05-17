@@ -173,7 +173,7 @@ int main()
 	{
 		graph[i].clear();
 		visited[i]=0;
-		con>>color[i];
+		cin>>color[i];
 	}
 	for(int i=1;i<=E;i++)
 	{
