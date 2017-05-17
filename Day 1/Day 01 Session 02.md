@@ -85,7 +85,7 @@ cout<<xor<<endl;
 ### O(N) solution:
 ```c++
 int xor=0;
-for(int i=0;i<N-1;i++)
+for(int i=0;i<sizeof(arr);i++)
 {
 	xor^=arr[i];
 }
@@ -95,11 +95,13 @@ cout<<"odd number: "<<xor<<"\n";
 ### O(N) solution:
 ```c++
 int xor=0;
-for(int i=0;i<N-1;i++)
+for(int i=0;i<N+1;i++)
 {
 	xor^=i+1;
+}
+for(int i=0;i<sizeof(arr))
+{
 	xor^=arr[i];
 }
-xor^=N
 cout<<"odd number: "<<xor<<"\neven numbers:\n";
 ```
