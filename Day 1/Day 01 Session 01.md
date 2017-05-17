@@ -52,7 +52,7 @@ for(int j=1;j<n;j++)
 
 ## Merge sort:
 Divide, conquer, combine
-![Example](/Day 1/Merge-Sort.png "Example")
+![Example](Merge-Sort.png "Example")
 ```
 If r > l
      1. Find the middle point to divide the array into two halves:  
@@ -171,7 +171,7 @@ int main()
 
 ## Binary search
 log(N) search algorithm
-![Example](/Day 1/binary-search1.png "Example")
+![Example](binary-search1.png "Example")
 
 ```c++
 #include <stdio.h>
