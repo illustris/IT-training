@@ -1,6 +1,5 @@
 # STL
 ## Vectors
-`vector<int> v;`
 ```c++
 #include <iostream>
 #include <vector>
@@ -41,9 +40,11 @@ for(it=v.begin();it!=v.end();++it)
 
 ### Misc. functions of vectors
 `v.empty()`
+
 returns true if vector is empty
 
 `v.resize(size_t)`
+
 resize vector
 
 ## Stacks
