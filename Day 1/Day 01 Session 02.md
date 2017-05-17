@@ -4,6 +4,7 @@ Given an array of n numbers, give an algo for checking for duplicates
 Assume array elements are +ve, from 0 to n-1
 array is not read only
 
+### Brute force O(N^2) solution:
 ```c++
 #include <iostream>
 
@@ -32,4 +33,36 @@ int main()
 	}
 	cout<<(flag?"yes":"no")<<endl;
 }
+```
+
+### O(N) solution:
+```c++
+void printRepeating(int arr[], int size)
+{
+	int i;
+	for (i = 0; i < size; i++)
+	{
+		if (arr[abs(arr[i])] >= 0)
+			arr[abs(arr[i])] = -arr[abs(arr[i])];
+		else
+		{
+			cout<<"Duplicate found";
+			break;
+		}
+}
+```
+
+### Brute force solution:
+
+## Problem 2
+Given a list of n-1 numbers in the range 1-n with no duplicates, find the one missing number
+### Brute force approach:
+Iterate through the array and look for missing integer
+
+### O(N) solution:
+```c++
+int sum=N*(N+1)/2;
+for(int i=0;i<N;i++)
+	sum-=arr[i];
+cout<<sum<<endl;
 ```
