@@ -51,5 +51,6 @@ W     X                Y     Z
 
 R==S if
 * T==V and U==W
+
 or
 * T==W and U==V
