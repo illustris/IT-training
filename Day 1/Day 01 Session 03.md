@@ -61,3 +61,27 @@ while(!s.empty())
 	s.pop();
 }
 ```
+
+## Queue
+`queue<int> q;`
+Works like a FIFO
+
+```c++
+for(int i=1;i<=10;i++)
+	q.push(i);
+cout<<q.size()<<endl;
+cout<<q.back()<<endl;
+while(!q.empty())
+{
+	cout<<q.top()<<endl;
+	q.pop();
+}
+```
+
+## Pairs
+`pair<int,int> p;`
+Singular entity with two elements
+```c++
+p.make_pair(10,20);
+cout<<p.first<<" "<<p.second<<endl;
+```
