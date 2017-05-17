@@ -36,4 +36,20 @@ Consider these binary trees:
 V     V                V     V
 A     B                A     B
 ```
+They are identical if:
+```
+      R                S
+     / \              / \
+    /   \            /   \
+   V     V          V     V
+   T     U          V     W
+  / \                    / \
+ /   \                  /   \
+V     V                V     V
+W     X                Y     Z
+```
 
+R==S if
+* T==V and U==W
+or
+* T==W and U==V
