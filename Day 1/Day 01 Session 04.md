@@ -90,15 +90,41 @@ int main()
 		graph[i].clear();
 		visited[i]=0;
 	}
-	for(int i=1;i<=N;i++)
+	for(int i=1;i<=E;i++)
 	{
-		//
-
+		int u,v;
+		cin>>u>>v
+		graph[u].push_back(u);
+		graph[u].push_back(v);
 	}
+	dfs(5);
 }
 
 ```
 input:
 ```
-
+5 6
+2 3
+3 1
+3 5
+5 4
+4 1
+1 2
+```
+graph:
+```
+5-----4
+|     |
+|     |
+3-----1
+ \   /
+  \ /
+   2
+```
+Followed path:
+```
+1->3->2
+|  |
+|  -->5
+-->4
 ```
