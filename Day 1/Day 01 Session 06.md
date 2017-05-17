@@ -59,3 +59,7 @@ R==S if
 		T==W if
 			W==Y and X==Z (- isn't commutative)
 ```
+
+# Passi's Practice Problems
+1. The diameter of a tree is the largest distance in the tree. Write code to find the diameter of a tree in O(N)
+2. In a rooted tree, find the Lowest Common Ancestor of two nodes
