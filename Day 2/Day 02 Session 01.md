@@ -183,3 +183,36 @@ Someone do and send a pull request please
 ```
 ## Given an expression with only { and }, find minimum bracket reversals to balance the expression
 
+```c++
+#include <iostream>
+#include <vector>
+#include <stack>
+using namespace std;
+
+int balance(string in)
+{
+	int unb_closed=0;
+	int unb_open=0;
+	for(char& c : in)
+	{
+		if(unb_open==0)
+			if(c=='}')
+				unb_closed++;
+			else
+				unb_open++;
+		else if(c=='}')
+			unb_open--;
+		else
+			unb_open++;
+	}
+	int r=(unb_open<unb_closed?unb_open:unb_closed);
+	r+=(unb_open<unb_closed?(unb_closed-unb_open)/2:(unb_open-unb_closed)/2);
+	return r;
+}
+
+int main()
+{
+	string in="}}}{{{";
+	cout<<balance(in)<<endl;
+}
+```
