@@ -63,3 +63,18 @@ remember current node's address as prev
 move to next node
 repeat
 ```
+
+### Q. Consider two linked lists merging into one at a node, and continuing as one. FInd the node at which they merge
+Solution using stacks:
+```
+Keep pushing nodes along both lists into two stacks.
+Keep popping both stacks as long as their top elements are equal
+The last common node is the point at which they converge
+```
+Alternative solution:
+```
+measure length of both paths
+set ptr1 at l2-l1 from the start of the longer path
+set ptr2 at the start of the other path
+increment both till ptr1==ptr2
+```
