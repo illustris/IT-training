@@ -193,6 +193,7 @@ int balance(string in)
 {
 	int unb_closed=0;
 	int unb_open=0;
+	int r=0;
 	for(char& c : in)
 	{
 		if(unb_open==0)
@@ -205,8 +206,7 @@ int balance(string in)
 		else
 			unb_open++;
 	}
-	int r=(unb_open<unb_closed?unb_open:unb_closed);
-	r+=(unb_open<unb_closed?(unb_closed-unb_open)/2:(unb_open-unb_closed)/2);
+	r+=((unb_closed%2==0?0:1)+unb_closed/2)+((unb_open%2==0?0:1)+unb_open/2);
 	return r;
 }
 
