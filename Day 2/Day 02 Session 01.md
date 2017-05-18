@@ -130,3 +130,56 @@ int main()
 ```
 
 ## Evaluate arithmetic expression in Reverse Polish Notation
+
+```c++
+#include <iostream>
+#include <vector>
+#include <stack>
+using namespace std;
+
+double evaluateRP(vector<string> in)
+{
+	stack<double> s;
+	double x,y,z;
+	while(!in.empty())
+	{
+		try
+		{
+			z=stof(in[0]);
+			s.push(z);
+		}
+		catch(...)
+		{
+			x=s.top();
+			s.pop();
+			y=s.top();
+			s.pop();
+			if(in[0]=="+")
+				z=y+x;
+			else if(in[0]=="-")
+				z=y-x;
+			else if(in[0]=="*")
+				z=y*x;
+			else if(in[0]=="/")
+				z=y/x;
+			s.push(z);
+		}
+		in.erase(in.begin());
+	}
+	return(s.top());
+}
+
+int main()
+{
+	vector<string> in = {"4","13","5","/","+"};
+	cout<<evaluateRP(in)<<endl;
+}
+```
+
+## Given an array, find the nearest smaller element for every element with a smaller index
+
+```c++
+Someone do and send a pull request please
+```
+## Given an expression with only { and }, find minimum bracket reversals to balance the expression
+
