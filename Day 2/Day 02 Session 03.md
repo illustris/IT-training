@@ -18,15 +18,20 @@ Example:
 
 ```c++
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void fib();
 
+int n;
+vector<long long int> fibresult;
+
 int main()
 {
-	global int n;
-	global fibresult[n];
+	n=65535;
+	fibresult.resize(n);
 	fib();
+	
 	cout<<fibresult[n-1]<<endl;
 }
 
