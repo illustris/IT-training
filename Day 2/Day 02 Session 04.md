@@ -81,3 +81,16 @@ int main()
     return 0;
 }
 ```
+
+## Q. Given a set, divide it into two non-overlapping and exhaustive subsets such that sum(A) = sum(B)
+This is similar to the knapsack problem. Take the weight and value of each object to be equal to the value of each element of the set and see if the maximum value of a knapsack can be made  equal to half the sum of the set
+
+```c++
+Write code later. Passi is going too fast
+```
+
+## Q. Given a set, find the subsequence with non-consecutive elements and maximum sum
+
+```c++
+:(
+```
