@@ -53,3 +53,13 @@ O(N) solution:
 ```
 Increment fastptr by 2, slowptr by 1. When fastptr is at the end, slowptr is at the midpoint
 ```
+
+### Q. Reverse a singly linked list
+O(N) solution:
+```
+Remember previous address and current node's next address
+replace current.next with the previous address
+remember current node's address as prev
+move to next node
+repeat
+```
