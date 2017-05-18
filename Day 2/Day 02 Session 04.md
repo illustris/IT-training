@@ -94,3 +94,7 @@ Write code later. Passi is going too fast
 ```c++
 :(
 ```
+
+# Greedy algorithm
+Making the locally optimal choice at each stage with the hope of finding a global optimum
+![Example](Greedy-search-path-example.gif "Example")
