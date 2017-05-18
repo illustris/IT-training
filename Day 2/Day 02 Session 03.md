@@ -17,7 +17,20 @@ Example:
 ```
 
 ```c++
-void fib ()
+#include <iostream>
+using namespace std;
+
+void fib();
+
+int main()
+{
+	global int n;
+	global fibresult[n];
+	fib();
+	cout<<fibresult[n-1]<<endl;
+}
+
+void fib()
 {
 	fibresult[0] = 1;
 	fibresult[1] = 1;
