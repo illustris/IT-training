@@ -45,5 +45,11 @@ pointer b has l-nth element
 ### Q. Check if a given linked list ends in a cycle
 O(N) solution:
 ```
-Start at first node. Traverse till next pointer NULL or pointing to first node
+There are two pointers, slow and fast. Slow increments by 1, fast increments by 2. If fast->next == NULL, it is a singly linked list. If at some point fast==slow, the list ends in a cycle
+```
+
+### Q. Find the midpoint of a singly linked list
+O(N) solution:
+```
+Increment fastptr by 2, slowptr by 1. When fastptr is at the end, slowptr is at the midpoint
 ```
