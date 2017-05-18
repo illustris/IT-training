@@ -1,8 +1,6 @@
 # Practice
 ## Problem 1
-Given an array of n numbers, give an algo for checking for duplicates
-Assume array elements are +ve, from 0 to n-1
-array is not read only
+Given an array of n numbers, give an algo for checking for duplicates. Assume array elements are +ve, from 0 to n-1. Array is not read only
 
 ### Brute force O(N^2) solution:
 ```c++
@@ -80,7 +78,7 @@ cout<<xor<<endl;
 ```
 
 ## Problem 3
-1. In an array of numbers containing , one number occurs an odd number of times. Every other number occurs an even number of times. If the array has every number from 1 to N, find the odd and even numbers
+1. In an array of numbers containing integers, one number occurs an odd number of times. Every other number occurs an even number of times. If the array has every number from 1 to N, find the odd number
 
 ### O(N) solution:
 ```c++

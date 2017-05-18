@@ -149,7 +149,7 @@ Solution 1:
 4. total += red bunch size * number of red beyond the blue node
 5. Repeat for other red nodes not belonging to the bunch
 
-##### Example problem #####
+#### Example problem ####
 Solution 2: connected component approach
 ```c++
 int dfs(int current)

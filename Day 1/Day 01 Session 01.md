@@ -35,7 +35,9 @@ Complexity: O(log(N)), as number of iterations is proportional to log(N)
 # Sorting Algorithms
 
 ## Insertion sort
-
+Loop from i = 1 to n-1.
+……a) Pick element arr[i] and insert it into sorted sequence arr[0…i-1]
+![Example](insertion-sort.png "Example")
 ```c++
 for(int j=1;j<n;j++)
 {
