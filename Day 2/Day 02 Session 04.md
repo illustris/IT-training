@@ -1,3 +1,7 @@
+# Greedy algorithm
+Making the locally optimal choice at each stage with the hope of finding a global optimum
+![Example](Greedy-search-path-example.gif "Example")
+
 # Practice problems
 ## Q. 0-1 Knapsack problem
 Knapsack has a capacity c. It is filled with items of value v,weight w. Sum of all weights can't exceed c. Maximize v
@@ -95,6 +99,5 @@ Write code later. Passi is going too fast
 :(
 ```
 
-# Greedy algorithm
-Making the locally optimal choice at each stage with the hope of finding a global optimum
-![Example](Greedy-search-path-example.gif "Example")
+## Q. Passi's Parting Practice Problem: A game of NIM
+Three piles of stones, two players. Each player removes a non-zero number of stones from the pile. The player that takes the last stone wins
