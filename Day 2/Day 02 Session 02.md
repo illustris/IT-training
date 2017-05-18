@@ -8,7 +8,7 @@ struct ll
 {
 	int val;
 	ll *next;
-}
+};
 ```
 
 This memory map:
@@ -27,17 +27,23 @@ struct ll
 	int val;
 	ll *next;
 	ll *prev;
-}
+};
 ```
 
 ## Circular lined list:
 Singly linked list where the last element links to the first element
 
+## Linked list practice questions
 ### Q. Find the nth last node in a linked list
-O(n), O(1) space Solution:
+O(N), O(1) space Solution:
 ```
 Move pointer a to n+1th element
 Move pointer b to 0th element
 keep incrementing both till a is at the last element
 pointer b has l-nth element
+```
+### Q. Check if a given linked list ends in a cycle
+O(N) solution:
+```
+Start at first node. Traverse till next pointer NULL or pointing to first node
 ```
