@@ -62,3 +62,71 @@ int main()
 ```
 
 ## Design a stack that can retrieve min element in O(1)
+
+```c++
+#include <iostream>
+#include <stack>
+using namespace std;
+
+class minStack
+{
+	stack<int> s;
+	stack<int> m;
+public:
+	void push(int a)
+	{
+		if(s.empty() || a<m.top())
+			m.push(a);
+		else
+		{
+			m.push(m.top());
+		}
+		s.push(a);
+	}
+	void pop()
+	{
+		s.pop();
+		m.pop();
+	}
+	int top()
+	{
+		return s.top();
+	}
+	int min()
+	{
+		return m.top();
+	}
+	int size()
+	{
+		return s.size();
+	}
+	bool empty()
+	{
+		return s.empty();
+	}
+}s1;
+
+int main()
+{
+	for(int i=10;i>=1;i--)
+	{
+		s1.push(i);
+		cout<<"Pushing "<<i<<" into stack. Min: "<<s1.min()<<endl<<flush;
+	}
+
+	for(int i=1;i<=10;i++)
+	{
+		s1.push(i);
+		cout<<"Pushing "<<i<<" into stack. Min: "<<s1.min()<<endl<<flush;
+	}
+
+	cout<<"Size: "<<s1.size()<<endl;
+	while(!s1.empty())
+	{
+		cout<<"Current min: "<<s1.min()<<". Popping "<<s1.top()<<endl;
+		s1.pop();
+	}
+}
+```
+
+## Evaluate arithmetic expression in Reverse Polish Notation
