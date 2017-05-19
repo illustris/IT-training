@@ -6,3 +6,6 @@ disjoint-set data structure, also called a unionâ€“find data structure or mergeâ
 ![A demo for Union-Find when using Kruskal's algorithm to find minimum spanning tree.](UnionFindKruskalDemo.gif "A demo for Union-Find when using Kruskal's algorithm to find minimum spanning tree.")
 
 Rank: Keep a track of the depth of each tree to ensure union result has lowest possible depth
+
+# Q.
+You are nth in a line of students waiting for viva. There are 3 teachers, who take 3,4 and 7 minutes respectively. Find which teacher you will go to if each student is sent to the available teacher with the lowest time, using binary search
